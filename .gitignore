@@ -1,0 +1,27 @@
+# deps
+node_modules
+.pnpm-store
+
+# next
+.next/
+out/
+build/
+
+# env
+.env*.local
+
+# misc
+.DS_Store
+*.pem
+
+# raw unprocessed media (huge camera originals - never commit)
+MIDIAS/
+
+# remotion render cache
+remotion/.cache
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
