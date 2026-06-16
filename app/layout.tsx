@@ -1,6 +1,8 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Geist, Fraunces } from 'next/font/google'
+import { CustomCursor } from '@/components/motion/custom-cursor'
+import { MotionProvider } from '@/components/motion/motion-provider'
 import './globals.css'
 
 const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] })
@@ -49,8 +51,11 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${geistSans.variable} ${fraunces.variable} bg-background`}
     >
-      <body className="font-sans antialiased">
-        {children}
+      <body className="grain font-sans antialiased">
+        <MotionProvider>
+          <CustomCursor />
+          {children}
+        </MotionProvider>
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>

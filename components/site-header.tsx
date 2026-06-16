@@ -7,8 +7,8 @@ import { InstagramIcon } from "@/components/instagram-icon"
 const NAV_LINKS = [
   { label: "História", href: "#historia" },
   { label: "Serviços", href: "#servicos" },
+  { label: "Showreel", href: "#showreel" },
   { label: "Portfólio", href: "#portfolio" },
-  { label: "Diferenciais", href: "#diferenciais" },
   { label: "Contato", href: "#contato" },
 ]
 
