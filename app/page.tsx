@@ -8,6 +8,7 @@ import { MasonryGallery } from "@/components/gallery/masonry-gallery"
 import { Differentiators } from "@/components/differentiators"
 import { ContactFooter } from "@/components/contact-footer"
 import { IntroOverlay } from "@/components/motion/intro-overlay"
+import { ScrollBubbles } from "@/components/motion/scroll-bubbles"
 
 export default function Page() {
   return (
@@ -16,6 +17,7 @@ export default function Page() {
       <SiteHeader />
       <main>
         <Hero />
+        <ScrollBubbles />
         <SegmentMarquee />
         <Story />
         <Services />

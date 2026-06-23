@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { ArrowDownRight } from 'lucide-react'
+import { WhatsappIcon } from '@/components/whatsapp-icon'
 import { CinematicReveal } from '@/components/motion/cinematic-reveal'
 import { HeroPhotoLayers } from '@/components/motion/hero-photo-layers'
 import { MagneticButton } from '@/components/motion/magnetic-button'
@@ -51,7 +52,7 @@ export function Hero() {
               <TextLineReveal delay={0.12}>
                 <span>Histórias que</span>
                 <span>
-                  <span className="italic text-accent-foreground/90">conectam</span>
+                  <span className="italic text-accent drop-shadow-[0_2px_12px_rgba(217,198,160,0.45)]">conectam</span>
                   {' '}e posicionam
                 </span>
               </TextLineReveal>
@@ -67,6 +68,15 @@ export function Hero() {
 
             <CinematicReveal variant="fade-up" delay={0.75} amount={0.5}>
               <div className="mt-9 flex flex-wrap items-center gap-3 sm:gap-4">
+                <MagneticButton
+                  href="https://wa.me/18996513244"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-6 py-3.5 text-sm font-medium text-white transition-opacity hover:opacity-90 sm:px-7 sm:py-4"
+                >
+                  <WhatsappIcon className="size-4" />
+                  Chamar no WhatsApp
+                </MagneticButton>
                 <MagneticButton
                   href="#contato"
                   className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3.5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90 sm:px-7 sm:py-4"

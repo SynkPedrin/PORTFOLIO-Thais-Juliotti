@@ -1,5 +1,6 @@
 import { ArrowUpRight } from 'lucide-react'
 import { InstagramIcon } from '@/components/instagram-icon'
+import { WhatsappIcon } from '@/components/whatsapp-icon'
 import { CinematicReveal, CinematicRevealItem } from '@/components/motion/cinematic-reveal'
 import { MagneticButton } from '@/components/motion/magnetic-button'
 import { TextLineReveal } from '@/components/motion/text-line-reveal'
@@ -33,6 +34,15 @@ export function ContactFooter() {
               </CinematicRevealItem>
               <CinematicRevealItem variant="fade-up">
                 <div className="mt-10 flex flex-wrap gap-4">
+                  <MagneticButton
+                    href="https://wa.me/18996513244"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-7 py-4 text-sm font-medium text-white transition-opacity hover:opacity-90"
+                  >
+                    <WhatsappIcon className="size-4" />
+                    Chamar no WhatsApp
+                  </MagneticButton>
                   <MagneticButton
                     href="https://www.instagram.com/thaisjuliotifoto/"
                     target="_blank"

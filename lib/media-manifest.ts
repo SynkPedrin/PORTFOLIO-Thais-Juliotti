@@ -38,10 +38,15 @@ export const GALLERY_CATEGORIES: GalleryCategory[] = [
       { slug: 'closeup', source: 'public/work/closeup.jpg', alt: 'Close-up íntimo do casal de noivos, testas quase se tocando', width: 4000, height: 6000 },
       { slug: 'hands', source: 'public/work/hands.jpg', alt: 'Mãos entrelaçadas da noiva, anel em destaque na luz', width: 4000, height: 6000 },
       { slug: 'rings', source: 'public/work/rings.jpg', alt: 'Alianças de casamento sobre um livro com capa ilustrada', width: 4000, height: 6000 },
-      { slug: 'heels', source: 'public/work/heels.jpg', alt: 'Sapatos da noiva pendurados em uma porta de vidro e madeira', width: 4000, height: 6000 },
-      { slug: 'flatlay', source: 'public/work/flatlay.jpg', alt: 'Composição still com perfume, sapatos e aliança sobre madeira', width: 4000, height: 6000 },
+      { slug: 'alianca-noivado', source: 'MIDIAS/2O7A0782.jpg', alt: 'Mãos entrelaçadas do casal com aliança de noivado em luz dramática', width: 4000, height: 6000 },
+      { slug: 'danca-igrejinha', source: 'MIDIAS/2O7A1008.jpg', alt: 'Noivos dançando e girando em frente à igrejinha de tijolo', width: 4000, height: 6000 },
+      { slug: 'bosque-eucaliptos', source: 'MIDIAS/2O7A1020.jpg', alt: 'Casal abraçado em plano aberto no bosque de eucaliptos', width: 4000, height: 6000 },
+      { slug: 'quase-beijo', source: 'MIDIAS/2O7A1036.jpg', alt: 'Close-up íntimo de casal quase se beijando ao ar livre', width: 4000, height: 6000 },
       { slug: 'countryside', source: 'MIDIAS/2O7A1172.jpg', alt: 'Casal abraçado em fazenda, cavalo ao fundo', width: 4000, height: 6000 },
+      { slug: 'mesa-posta', source: 'MIDIAS/2O7A2435.jpg', alt: 'Mesa posta com arranjos de flores brancas e velas para a recepção', width: 4000, height: 6000 },
       { slug: 'reception-dance', source: 'MIDIAS/2O7A2905.jpg', alt: 'Casal dançando na recepção sob luzes amareladas', width: 4000, height: 6000 },
+      { slug: 'sapatos-noiva', source: 'MIDIAS/2O7A9628.jpg', alt: 'Sapatos brancos da noiva pendurados em porta dourada de vidro', width: 4000, height: 6000 },
+      { slug: 'acessorios-noiva', source: 'MIDIAS/2O7A9679.jpg', alt: 'Flatlay de acessórios da noiva: perfume, brincos e sapatos em mesa de madeira', width: 4000, height: 6000 },
     ],
   },
   {
@@ -51,8 +56,6 @@ export const GALLERY_CATEGORIES: GalleryCategory[] = [
     items: [
       { slug: 'congregacao', source: 'MIDIAS/IMG_8453.jpg', alt: 'Família em pé durante a cerimônia, vitrais ao fundo', width: 1365, height: 2048 },
       { slug: 'agua-batismal', source: 'MIDIAS/IMG_8592.jpg', alt: 'Padre derramando água batismal sobre o bebê', width: 1365, height: 2048 },
-      { slug: 'celebrante', source: 'MIDIAS/IMG_8594.jpg', alt: 'Mãe segurando o bebê durante o batismo, celebrante ao lado', width: 1365, height: 2048 },
-      { slug: 'colo-altar', source: 'MIDIAS/IMG_8886.jpg', alt: 'Pais abraçando o bebê em frente ao altar', width: 1365, height: 2048 },
       { slug: 'beijo-altar', source: 'MIDIAS/IMG_9060.jpg', alt: 'Pais beijando o bebê diante da imagem sacra', width: 1365, height: 2048 },
       { slug: 'nossa-senhora', source: 'MIDIAS/IMG_9120.jpg', alt: 'Família diante da imagem de Nossa Senhora de Fátima', width: 1365, height: 2048 },
     ],
@@ -64,6 +67,7 @@ export const GALLERY_CATEGORIES: GalleryCategory[] = [
     items: [
       { slug: 'bolhas-de-sabao', source: 'MIDIAS/2O7A8082.jpg', alt: 'Família soprando bolhas de sabão no parque', width: 4000, height: 6000 },
       { slug: 'pai-e-filho', source: 'MIDIAS/2O7A8221.jpg', alt: 'Pai brincando com o filho pequeno no jardim', width: 4000, height: 6000 },
+      { slug: 'amamentacao', source: 'MIDIAS/2O7A8490.jpg', alt: 'Mãe amamentando recém-nascido com pai ao lado no quarto do bebê', width: 1365, height: 2048 },
       { slug: 'recem-nascido', source: 'MIDIAS/2O7A8570.jpg', alt: 'Mãe beijando a testa do recém-nascido', width: 1365, height: 2048 },
       { slug: 'quarto-de-bebe', source: 'MIDIAS/2O7A9589.jpg', alt: 'Pais com o bebê no quarto da casa, luz suave de janela', width: 4000, height: 6000 },
     ],
@@ -79,18 +83,11 @@ export const GALLERY_CATEGORIES: GalleryCategory[] = [
     ],
   },
   {
-    id: 'branding',
-    label: 'Branding & Varejo',
-    description: 'Conteúdo comercial com direção de arte para marcas físicas.',
+    id: 'cobertura-de-eventos',
+    label: 'Cobertura de Eventos',
+    description: 'Gastronomia, branding e varejo — eventos com direção de arte e olhar editorial.',
     items: [
       { slug: 'boutique-interior', source: 'MIDIAS/ANGSTLLmov.mp4', alt: 'Interior de boutique de roupas com araras e mesa de atendimento', width: 1080, height: 1920, extractFrameAt: 4 },
-    ],
-  },
-  {
-    id: 'gastronomia',
-    label: 'Gastronomia',
-    description: 'Bastidores e produto: a estética de marcas e eventos gastronômicos.',
-    items: [
       { slug: 'defumados-artesanais', source: 'MIDIAS/Marchetti .MOV', alt: 'Produtores artesanais exibindo carnes defumadas em evento gastronômico', width: 1080, height: 1920, extractFrameAt: 6 },
     ],
   },
