@@ -31,6 +31,7 @@ export function run() {
         '-i', source,
         '-vframes', '1',
         '-q:v', '2',
+        '-update', '1',
         output,
       ])
     }
